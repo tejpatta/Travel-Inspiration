@@ -43,8 +43,11 @@
 </section>
 <!-- Results -->
 <section class="results hide" id="results-view">
-<!-- Country name -->
-  <!-- Description -->
+<div class="container">
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <h2 id="city-name"></h2> <!-- empty we will target with JS to add city name -->
+    <p id="city-description"></p>
   <!-- Carousel -->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
@@ -84,14 +87,16 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  
+   <!-- Activities button-->
+   <button type="button" class="btn btn-secondary" id="activities-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Find Activities
+  </button>
+  </div>
+</div>
+</div>
+</section>
   <!-- Activities -->
-  <section class="text-center">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary" id="activities-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      Find Activities
-    </button>
-
+  <section class="text-center"> <!-- Should that be div instead of section -->
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">

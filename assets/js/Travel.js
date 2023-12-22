@@ -11,7 +11,7 @@ const previousBtn = $("#previous");
 function getCountry(countryInput) {
 
     //Rapid API calling method
-    let descriptionURL = 'https://travel-info-api.p.rapidapi.com/country?country=turkey'; //+ countryInput;
+    let descriptionURL = 'https://travel-info-api.p.rapidapi.com/country?country=' + countryInput; //+ countryInput;
     let options = {
         method: 'GET',
         headers: {
@@ -37,7 +37,7 @@ getCountry() //shall be called in app.js each time the restuls need to be cleare
 
 function getActivities(countryInput) {
 
-    let activitiesURL = 'https://travel-info-api.p.rapidapi.com/country-activities?country=turkey';
+    let activitiesURL = 'https://travel-info-api.p.rapidapi.com/country-activities?country=' + countryInput;
     let options = {
         method: 'GET',
         headers: {

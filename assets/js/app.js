@@ -1,27 +1,26 @@
+// Select HTML element for Search button and assign it to a variable
 let searchBtn = $("#search")
 
-searchBtn.click(function(){
+//it allows us to search by clicking ENTER
+$("#country-search").keydown(function (e) {;
+    if(e.which == 13) {
+        e.preventDefault();
+        search();  
+    }
+}); 
+
+// Add a click event listener to the Search button
+searchBtn.click(search);
+
+function search(){
+    $("#loading").removeClass("hide");
+    $("#search").addClass("hide");
+    $("#results-view").removeClass("hide")
+    $(".placeholder").show();
+    // When the button is clicked then get the value from the input, remove whitespace, convert input to lowercase, and assign it to the variable countryInput
     let countryInput = $("#country-search").val().trim().toLowerCase();
+    // Call the getCountry function with countryInput as an argument
     getCountry(countryInput);
-});
-// get variables for input 
-
-//on click search if input is error display correct your data maybe in modal,
-// if data is correct remove hide css attribute and siaply the results section, 
+};
 
 
-
-/* Logic that triggers travel js:
-
-    on click function that transferes the value of the input to the function and calls 
-    getCountry with parameter of the input 
-
-    onl click function that transfers the value of the input to get Activites
-        NO
-        that cannot be transferred
-    
-        on cick function needs to return value of county input stored in variable and then in needs to be overwittten each time 
-        unless on click is nested in get country function to getActivites ot transfer the variable.
-
-
-*/

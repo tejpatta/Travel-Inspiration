@@ -21,7 +21,7 @@ function search(){
     let countryInput = $("#country-search").val().trim().toLowerCase();
     // Call the getCountry function with countryInput as an argument
     getCountry(countryInput);
-    displayPhotos();
+    displayPhotos(countryInput);
 };
 
 

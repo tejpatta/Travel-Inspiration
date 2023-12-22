@@ -60,8 +60,8 @@ function getActivities(countryInput) {
                     $("#staticBackdropLabel").text(activitiesArr[i].title);
                     $("#activityDescription").text(activitiesArr[i].activity);
 
-                    if (i == 0) previousBtn.disabled = true;
-                    if (i == activitiesArr.length - 1) nextBtn.disabled = true;
+                    if(i == 0) {previousBtn.disabled = true};
+                    if(i == activitiesArr.length - 1){nextBtn.disabled = true};
                 
                     nextBtn.click(function(){
                         let currentActivity = $(this);
@@ -95,27 +95,7 @@ $("#activitiesBtn").click(function(){
     getActivities();
 });
 
-// getActivities() is run when someone clicks button modal pops up 
-// save data.data.activies as array of objescts 
-//iterrate through the array, but only iterrate +1 when clincked nect but -1 when clicked previous 
-//we do not need to limit ourselves to 5 activites we cn use them all!
-// each itteration seets card title and description.
-// 
 
 // to function add contitonal statement for error ( 1. misspeaed country, api not valid)
 
 
-/*var arr= [
-data:
-activities:
-0:
-title:"Be dazzled by the Whirling Dervishes"
-activity:"The renowned Whirling Dervishes are one of Turkey's most iconic tourist attractions. Members of the Mevlevi Order perform the famous whirling dance known as Sema as part of an aged ceremony. It's best seen in Konya where the Order originated, though many shows catering to visitors are put on in Istanbul, too."
-1:
-title:"Cruise down the Black Sea"
-activity:"Explore the northern suburbs of Istanbul by ferry-boat, criss-crossing the Bosphorus to visit villages that stretch up to the mouth of the Black Sea. You can escape the tourists further and join holidaying Turks at one of the small Black Sea coast towns like Ünye or Giresun – less crowded, cooler and greener than the Mediterranean coast."
-
-
-// find activites displays[0]
-//next [3]
-//previous */

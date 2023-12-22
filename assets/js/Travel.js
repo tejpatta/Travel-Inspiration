@@ -1,6 +1,7 @@
 // Variables to store API keys
-let API1 = '85466cfae5mshfa6aee501d09035p1fa241jsn2ff4bb9e5a8e' // Kiki
+let API1 = '85466cfae5mshfa6aee501d09035p1fa241jsn2ff4bb9e5a8e' // Kiki (no more calls)
 let API2 = '2c2f85e129mshcd557de6f46f3dap1a6b2djsn6829e8192a47' // Polly (no more calls available for current month)
+let API3 = '763f4f9f83msh76913dfe59f58c3p1c0fdfjsnb7895ee045c6' //Tej
 // Select HTML elements for Next and Previous buttons and assign them to variables
 const nextBtn = $("#next");
 const previousBtn = $("#previous");
@@ -12,7 +13,7 @@ function getCountry(countryInput) {
     let options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': API1,
+            'X-RapidAPI-Key': API3,
             'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
         }
     };

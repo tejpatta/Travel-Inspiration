@@ -11,7 +11,7 @@ const previousBtn = $("#previous");
 function getCountry(countryInput) {
 
     //Rapid API calling method
-    let descriptionURL = 'https://travel-info-api.p.rapidapi.com/country?country=' + countryInput; //+ countryInput;
+    let descriptionURL = 'https://travel-info-api.p.rapidapi.com/country?country=' + countryInput;
     let options = {
         method: 'GET',
         headers: {
@@ -29,30 +29,32 @@ function getCountry(countryInput) {
             $("#countryName").text(countryInput);
             $("#countryDescription").text(data.data.info)
         })
-}
-getCountry() //shall be called in app.js each time the restuls need to be cleared. 
+        
+        // it fetches data from travel data API renders activities for chosen country 
+
+        let activitiesArr=[];
+        let activitiesURL = 'https://travel-info-api.p.rapidapi.com/country-activities?country=' + countryInput;
+        
+    
+        fetch(activitiesURL, options)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                console.log(data);
+                activitiesArr = data.data.activities;
+                return activitiesArr
+            })
+
+        $("#activitiesBtn").click(function(){
+            getActivities(activitiesArr);
+        });
+} 
 
 
-// it fetches data from travel data API renders activities for chosen country 
 
-function getActivities(countryInput) {
+function getActivities(activitiesArr) {
 
-    let activitiesURL = 'https://travel-info-api.p.rapidapi.com/country-activities?country=' + countryInput;
-    let options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': API1,
-            'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
-        }
-    };
-
-    fetch(activitiesURL, options)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
-            let activitiesArr = data.data.activities;
             displayActivities(activitiesArr, 0);
 
             function displayActivities(activitiesArr, i) {
@@ -87,15 +89,6 @@ function getActivities(countryInput) {
                 displayActivities(activitiesArr, i);
 
             }
-
-        })
 }
 
-$("#activitiesBtn").click(function(){
-    getActivities();
-});
-
-
 // to function add contitonal statement for error ( 1. misspeaed country, api not valid)
-
-

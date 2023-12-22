@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid d-flex justify-content-center">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="/Travel-Inspiration/assets/images/Brand.png" alt="Icon" width="60" height="60" class="d-inline-block align-top">
+        <img src="/assets/images/Brand.png" alt="Icon" width="60" height="60" class="d-inline-block align-top">
         <span class="ml-2">Travel Companion</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
 <div class="container">
 <div class="row">
   <div class="col-md-6 mx-auto">
-    <h2 id="countryName"></h2> <!-- empty we will target with JS to add city name -->
+    <h2 id="countryName" class="text-center"></h2> <!-- empty we will target with JS to add city name -->
     <p id="countryDescription"></p>
   <!-- Carousel -->
   <div id="carouselExampleCaptions" class="carousel slide">
@@ -89,7 +89,7 @@
     </button>
   </div>
    <!-- Activities button-->
-   <button type="button" class="btn btn-secondary" id="activities-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+   <button type="button" class="btn btn-secondary" id="activitiesBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Find Activities
   </button>
   </div>
@@ -106,12 +106,11 @@
             <h1 class="modal-title fs-5" id="staticBackdropLabel">Title</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" id="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, rem voluptas maiores accusantium inventore iusto ipsam veritatis nostrum commodi facere quam laudantium voluptatum qui! Quos assumenda fuga, ad aliquam vitae nostrum maiores architecto accusantium necessitatibus repellat autem! Quia voluptatum consequuntur nobis molestias doloribus commodi recusandae voluptatem magni amet sapiente ex dolor, praesentium fugiat veritatis laboriosam distinctio? Ipsum debitis impedit esse!
-          </div>
+          <p class="modal-body" id="activityDescription">
+          </p>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary">Next</button>
+            <button id="previous" type="button" class="btn btn-secondary">Previous</button>
+            <button id="next" type="button" class="btn btn-primary">Next</button>
           </div>
         </div>
       </div>
@@ -134,9 +133,10 @@
 
 <!-- Our Scripts-->
 <script src="assets/js/Unsplash.js"></script>
-<!--Our JS 
+<!--Our JS  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/js/Travel.js"></script> -->
+<script src="assets/js/Travel.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 

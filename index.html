@@ -46,7 +46,7 @@
 <div class="container">
 <div class="row">
   <div class="col-md-6 mx-auto">
-    <h2 id="countryName"></h2> <!-- empty we will target with JS to add city name -->
+    <h2 id="countryName" class="text-center"></h2> <!-- empty we will target with JS to add city name -->
     <p id="countryDescription"></p>
   <!-- Carousel -->
   <div id="carouselExampleCaptions" class="carousel slide w-50">
@@ -88,7 +88,7 @@
     </button>
   </div>
    <!-- Activities button-->
-   <button type="button" class="btn btn-secondary" id="activities-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+   <button type="button" class="btn btn-secondary" id="activitiesBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Find Activities
   </button>
   </div>
@@ -105,12 +105,11 @@
             <h1 class="modal-title fs-5" id="staticBackdropLabel">Title</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" id="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, rem voluptas maiores accusantium inventore iusto ipsam veritatis nostrum commodi facere quam laudantium voluptatum qui! Quos assumenda fuga, ad aliquam vitae nostrum maiores architecto accusantium necessitatibus repellat autem! Quia voluptatum consequuntur nobis molestias doloribus commodi recusandae voluptatem magni amet sapiente ex dolor, praesentium fugiat veritatis laboriosam distinctio? Ipsum debitis impedit esse!
-          </div>
+          <p class="modal-body" id="activityDescription">
+          </p>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary">Next</button>
+            <button id="previous" type="button" class="btn btn-secondary">Previous</button>
+            <button id="next" type="button" class="btn btn-primary">Next</button>
           </div>
         </div>
       </div>
@@ -131,14 +130,12 @@
 <!-- Bootstrap JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
 <!-- Our Scripts-->
 <script src="assets/js/Unsplash.js"></script>
-=======
-<!--Our JS 
+<!--Our JS  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/js/Travel.js"></script> -->
->>>>>>> 296c8cef18b3c0fc1a4512f37018c6a161225153
+<script src="assets/js/Travel.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 

@@ -26,7 +26,9 @@ function getCountry(countryInput) {
         })
         .then(function (data) {
             console.log(data);
-            
+            $("#loading").addClass("hide");
+            $("#search").removeClass("hide");
+            $(".placeholder").hide()
             $("#countryName").text(countryInput.toUpperCase());
             $("#countryDescription").text(data.data.info)
         })

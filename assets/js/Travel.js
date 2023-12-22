@@ -25,4 +25,15 @@ function getCountry(countryInput){
             })
 }
 
-//getCountry(country) //shall be called in app.js
+//getCountry(country) //shall be called in app.js each time the restuls need to be cleared. 
+
+// when someone clicks button modal pops up 
+// save data.data.activies as array of objescts 
+//iterrate through the array, but only iterrate +1 when clincked nect but -1 when clicked previous 
+//we do not need to limit ourselves to 5 activites we cn use them all!
+// each itteration seets card title and description.
+// 
+
+// to function add contitonal statement for error ( 1. misspeaed country, api not valid)
+
+

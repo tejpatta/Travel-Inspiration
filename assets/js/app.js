@@ -1,9 +1,22 @@
 let searchBtn = $("#search")
-
-searchBtn.click(function(){
+/*
+//it allows us to search by clicking ENTER
+$('#country-search').keypress(function (e) {
+    e.preventDefault();
+    if(e.which== 13) {
+        searchCity();  
+    }
+}); 
+*/
+searchBtn.click(searchCity);
+function searchCity(){
+    $("#loading").removeClass("hide");
+    $("#search").addClass("hide");
+    $("#results-view").removeClass("hide")
+    $(".placeholder").show();
     let countryInput = $("#country-search").val().trim().toLowerCase();
     getCountry(countryInput);
-});
+}
 // get variables for input 
 
 //on click search if input is error display correct your data maybe in modal,

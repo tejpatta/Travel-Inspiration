@@ -1,3 +1,36 @@
+body{
+    background-color:RGB(22, 44, 58);
+}
 .hide{
     display: none !important;
+}
+
+#country-search, #activityDescription, #countryDescription{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#countryName, #countryDescription{
+    color: RGB(219, 169, 136);
+}
+#search{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#jumbotron .display-4, #countryName, #staticBackdropLabel{
+
+    font-family: 'Yeseva One', serif;
+}
+#jumbotron{
+    color: white;
+}
+
+nav{
+    background-color: RGB(219, 169, 136);
+
+}
+
+.fa-solid{
+    color: RGB(217, 124, 80);
+}
+footer{
+    color: RGB(219, 169, 136);
 }

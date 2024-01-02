@@ -1,5 +1,5 @@
   // Add a country to favourites
-  function addToFavorites() {
+  function addToFavourites() {
     // Retrieve the search history from local storage
     let searchHistory = localStorage.getItem('searchHistory');
 

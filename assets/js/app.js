@@ -13,6 +13,7 @@ $("#country-search").keydown(function (e) {;
 searchBtn.click(search);
 
 function search(){
+    $("#error").addClass("hide");
     $("#loading").removeClass("hide");
     $("#search").addClass("hide");
     $("#results-view").removeClass("hide")
@@ -22,6 +23,7 @@ function search(){
     if (countryInput == ""){
         countryInput = countryList[random(0, countryList.length)]
     }
+    console.log(countryInput);
     // Call the getCountry function with countryInput as an argument
     getCountry(countryInput);
     displayPhotos(countryInput);

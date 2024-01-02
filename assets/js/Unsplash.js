@@ -1,7 +1,11 @@
 
 function displayPhotos(countryInput){
-    let unsplashKey1 = "nkO4QtA3j8b37iVDzhJIitt4QwUCEv6UfCOB7-O2d1I";
-    let unsplashKey2 = "__q3dGBVbr-ZPGFeEpdoAGNhbQ24nZxvv6gIazuJnsA";
+    let unsplashKey1 = "nkO4QtA3j8b37iVDzhJIitt4QwUCEv6UfCOB7-O2d1I"; //Polly
+    let unsplashKey2 = "__q3dGBVbr-ZPGFeEpdoAGNhbQ24nZxvv6gIazuJnsA"; //Tej
+    let unsplashKey3;
+    let unsplashKey4;
+    let unsplashKey5;
+    let unsplashKey6;
     
     let photoURL = "https://api.unsplash.com/search/photos/?client_id=" + unsplashKey2+ "&query=" + countryInput;
     

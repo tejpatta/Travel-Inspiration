@@ -31,7 +31,6 @@ function getCountry(countryInput) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
             $("#loading").addClass("hide");
             $("#search").removeClass("hide");
             $(".placeholder").hide()
@@ -59,9 +58,9 @@ function getCountry(countryInput) {
                 return response.json();
             })
             .then(function (data) {
-                console.log(data);
                 activitiesArr = data.data.activities;
-                return activitiesArr
+                
+                                                                //hide initaily, and dipsly buttin when fetched!
             })
             .catch(function (error) {
                 console.error(error);

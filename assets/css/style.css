@@ -4,7 +4,16 @@ body{
 .hide{
     display: none !important;
 }
-
+#app-title{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+#my-list-link{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
 #country-search, #activityDescription, #countryDescription{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;

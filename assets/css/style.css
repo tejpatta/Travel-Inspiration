@@ -4,15 +4,30 @@ body{
 .hide{
     display: none !important;
 }
-
+#app-title{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+#my-list-link{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
 #country-search, #activityDescription, #countryDescription{
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+#activityDescription, #countryDescription{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 #countryName, #countryDescription{
     color: RGB(219, 169, 136);
 }
 #search{
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 #jumbotron .display-4, #countryName, #staticBackdropLabel{
@@ -57,3 +72,8 @@ footer{
 #myFavorites{
     align-items: center;
 }
+.fa-solid:hover{
+    color: rgb(246, 142, 44);
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }

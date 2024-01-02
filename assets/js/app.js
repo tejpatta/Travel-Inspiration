@@ -20,9 +20,17 @@ function search(){
     $(".placeholder").show();
     // When the button is clicked then get the value from the input, remove whitespace, convert input to lowercase, and assign it to the variable countryInput
     let countryInput = $("#country-search").val().trim().toLowerCase();
+    if (countryInput == ""){
+        countryInput = countryList[random(0, countryList.length)]
+    }
+    console.log(countryInput);
     // Call the getCountry function with countryInput as an argument
     getCountry(countryInput);
     displayPhotos(countryInput);
 };
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
 
 

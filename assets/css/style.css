@@ -1,3 +1,59 @@
+body{
+    background-color:RGB(22, 44, 58);
+}
 .hide{
     display: none !important;
+}
+
+#country-search, #activityDescription, #countryDescription{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#countryName, #countryDescription{
+    color: RGB(219, 169, 136);
+}
+#search{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#jumbotron .display-4, #countryName, #staticBackdropLabel{
+
+    font-family: 'Yeseva One', serif;
+}
+#jumbotron{
+    color: white;
+}
+
+nav{
+    background-color: rgb(219, 169, 136);
+
+}
+.fa-solid{
+ color: rgb(217, 124, 80);   
+}
+#search, #activitiesBtn{
+    background-color: RGB(217, 124, 80);
+    color: white;
+}
+#previous{
+    background-color: rgb(41, 107, 147);
+    color: white; 
+}
+#next{
+   background-color: rgb(22, 44, 58) ;
+   color: white;
+}
+footer{
+    color: rgb(219, 169, 136);
+}
+
+.modal-content{
+    background-color: rgb(219, 169, 136);
+
+}
+#activityDescription{
+    color: rgb(22, 44, 58);
+}
+
+#myFavorites{
+    align-items: center;
 }

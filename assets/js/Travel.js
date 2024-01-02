@@ -5,6 +5,7 @@ let API3 = '763f4f9f83msh76913dfe59f58c3p1c0fdfjsnb7895ee045c6' //Tej
 let API4 = '114a43f124mshc060f6ed498829ap11d917jsn1598363f0fb3';//Martin
 let API5 = '44614e961bmshea0658b49e7c681p145de8jsnb73df4c59998'; //Jack
 let API6 = 'c8e17047e3msh040b1a6454661ecp1a6038jsndcdff0c80a9a';//Jim
+let API7 = 'e666cd08b7msh92d307d3954b86cp14b9c5jsn29a323a0ca25';
 
 // Select HTML elements for Next and Previous buttons and assign them to variables
 const nextBtn = $("#next");
@@ -17,7 +18,7 @@ function getCountry(countryInput) {
     let options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': API4,
+            'X-RapidAPI-Key': API7,
             'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
         }
     };

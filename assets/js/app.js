@@ -13,6 +13,7 @@ $("#country-search").keydown(function (e) {;
 searchBtn.click(search);
 
 function search(){
+    $("#error").addClass("hide");
     $("#loading").removeClass("hide");
     $("#search").addClass("hide");
     $("#results-view").removeClass("hide")

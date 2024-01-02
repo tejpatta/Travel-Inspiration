@@ -63,3 +63,8 @@ footer{
 #myFavorites{
     align-items: center;
 }
+.fa-solid:hover{
+    color: rgb(246, 142, 44);
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }

@@ -1,5 +1,13 @@
+:root{
+--darkbg: rgb(22, 44, 58);
+--accentlight: rgb(219, 169, 136);
+--accentdark: rgb(217, 124, 80)
+}
+
+/*Styles for Index.html */
+
 body{
-    background-color:RGB(22, 44, 58);
+    background-color:var(--darkbg);
 }
 .hide{
     display: none !important;
@@ -23,7 +31,7 @@ body{
     font-weight: 400;
 }
 #countryName, #countryDescription{
-    color: RGB(219, 169, 136);
+    color: var(--accentlight);
 }
 #search{
     font-family: 'Josefin Sans', sans-serif;
@@ -39,14 +47,14 @@ body{
 }
 
 nav{
-    background-color: rgb(219, 169, 136);
+    background-color: var(--accentlight);
 
 }
 .fa-solid{
- color: rgb(217, 124, 80);   
+ color: var(--accentdark);   
 }
 #search, #activitiesBtn{
-    background-color: RGB(217, 124, 80);
+    background-color: var(--accentdark);
     color: white;
 }
 #previous{
@@ -58,11 +66,11 @@ nav{
    color: white;
 }
 footer{
-    color: rgb(219, 169, 136);
+    color: var(--accentlight);
 }
 
 .modal-content{
-    background-color: rgb(219, 169, 136);
+    background-color: var(--accentlight);
 
 }
 #activityDescription{
@@ -89,3 +97,5 @@ footer{
   #country-search{
     width: 20vw;
   }
+
+  /* Styles for mylist */

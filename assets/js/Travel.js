@@ -59,8 +59,7 @@ function getCountry(countryInput) {
             })
             .then(function (data) {
                 activitiesArr = data.data.activities;
-                
-                                                                //hide initaily, and dipsly buttin when fetched!
+                activitiesBtn.show();
             })
             .catch(function (error) {
                 console.error(error);

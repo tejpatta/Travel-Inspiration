@@ -14,6 +14,7 @@ function displayPhotos(countryInput){
         return response.json();
       })
       .then(function(data){
+        myFav.show()
         let firstImageDiv = $("<div>").addClass("carousel-item active")
         let firstCountryImage = $("<img>").addClass("d-block w-100").attr("src", (data.results[0].urls.raw + '&fit=crop&w=550&h=500'))
         let firstImageCaptionDiv = $("<div>").addClass("carousel-caption d-none d-md-block")
@@ -31,6 +32,12 @@ function displayPhotos(countryInput){
         ImageDiv.append(CountryImage, ImageCaptionDiv)
         $(".carousel-inner").append(ImageDiv)
       }
+
+      myFav.click(function(){
+        localStorage.setItem(JSON.stringify(countryInput), JSON.stringify(data.results[0].urls.raw)) // edit size of the photo to fit the frame 
+      })
+
+
 })
 }
 

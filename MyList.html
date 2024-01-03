@@ -2,105 +2,83 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>My List</title>
+  <<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b2f91b3e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Work+Sans:wght@100;400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Favourites</title>
+  </head>
 </head>
 
-<body>
-<!-- NavBar -->
-<section id="NavBar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body onload="generateFavourites()">
+  <section id="NavBar">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid d-flex justify-content-center">
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="/assets/images/Brand.png" alt="Icon" width="60" height="60" class="d-inline-block align-top">
-          <span class="ml-2">Yūgen</span></a>
+          <img src="assets/images/Brand.png" alt="Icon" width="60" height="60" class="d-inline-block align-top">
+          <span class="ml-2" id="app-title">Yūgen</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Back</a>
+              <a class="nav-link active" id="my-list-link" aria-current="page" href="index.html">earch</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </section>
-  <h2>My Search Results</h2>
-<!-- Search Results -->
-<section id="SearchResults" class="container">
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-lg-4">
-        <div class="card" id="card1">
-          <div class="card-body">
-            <!-- Add content for card 1 -->
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="col-lg-4">
-        <div class="card" id="card2">
-          <div class="card-body">
-            <!-- Add content for card 2 -->
-          </div>
-        </div>
+  <!-- Jumbotron -->
+  <section id="jumbotron">
+    <div class="bg-light p-5 text-center" style="background-image: url('assets/images/kristine-tanne-EZT6qusWOBQ-unsplash.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 250px; border-radius: 0; max-width: 100%; margin-bottom: 3em;">
+      <h1 class="display-4"><strong>My Fafourites List</strong></h1>
+    </div>
+    </div>
+  </section>
+  <!-- My Favourites -->
+<section id="saved-favourites">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-sm-4">
+        <img src="https://placehold.co/400x300" class="img-fluid rounded-start" alt="...">
       </div>
-
-      <!-- Card 3 -->
-      <div class="col-lg-4">
-        <div class="card" id="card3">
-          <div class="card-body">
-            <!-- Add content for card 3 -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-lg-4">
-        <div class="card" id="card4">
-          <div class="card-body">
-            <!-- Add content for card 4 -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="col-lg-4">
-        <div class="card" id="card5">
-          <div class="card-body">
-            <!-- Add content for card 5 -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="col-lg-4">
-        <div class="card" id="card6">
-          <div class="card-body">
-            <!-- Add content for card 6 -->
-          </div>
+      <div class="col-sm-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <a href="index.html" class="btn btn-primary">Get info</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rHyoN1iRsVXk18s3uqDdLeA7k9JKoq1ghKxVd4uFOzF+8WKUqZI+qOstwE2Aeg2m" crossorigin="anonymous"></script>
+  </div>
+</section>
 
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <span class="ms-2 mb-3 mb-md-0 text-body-secondary">© 2023 sibert-pod-11</span>
     </div>
   </footer>
+<!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!-- Bootstrap JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- Our Scripts-->
+<script src="assets/js/Unsplash.js"></script>
+<!--Our JS  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/js/Travel.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/local.js"></script>
+<script src="assets/js/countries.js"></script>
 
 </body>
 </html>

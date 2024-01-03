@@ -1,7 +1,22 @@
+  /*
+  1. Nest on click een in unsolashjs to save to the local storage 
+    - name of the country (key)
+    - one of the pics genrated by unsplash (value)
+    
+  2. Write the base of the function in the locaj js. - dysplayng the saved countires on the my list html upon loading on the webpage. 
+  onload() in body element 
+  onlaod in body element shouls trigger get from local storage 
+
+  get from local storage function shouls get all objects as an array which in the loop for each element from the array we should get a card with photo tytle and search button generated. 
+  when search buttton is clicked it should trigger seach function on index html (redirect us to it)
+  
+  */
+  
   // Add a country to favourites
-  function addToFavourites() {
+  function generateFavourites() { 
     // Retrieve the search history from local storage
-    let searchHistory = localStorage.getItem('searchHistory');
+    let savedFavourites = Object.entries(localStorage) // array of arrays 
+    
 
   }
     // Retrieve the country information from the current search
@@ -20,6 +35,3 @@
     // Get the first card in "My List"
     const firstCard = document.getElementById('card1');
 
-let unsplashKey1 = "nkO4QtA3j8b37iVDzhJIitt4QwUCEv6UfCOB7-O2d1I";
-let unsplashKey2 = "__q3dGBVbr-ZPGFeEpdoAGNhbQ24nZxvv6gIazuJnsA";
-let travelKey1 = "nkO4QtA3j8b37iVDzhJIitt4QwUCEv6UfCOB7-O2d1I";

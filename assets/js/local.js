@@ -1,13 +1,8 @@
-  
+
   // Add a country to favourites
   function generateFavourites() { 
     // Retrieve the search history from local storage
     let savedFavourites = Object.entries(localStorage) // array of arrays 
-    console.log(savedFavourites)
-    //if (savedFavourites=={}){
-      //<h2>You have no favourites saved yet!</h2>
-    //} else {}
-
     // Card
     for (i = 0; i < savedFavourites.length; i++) {
     let favDiv = $("<div>").addClass("card m-3 col-lg-4 col-md-4 col-sm-12")
@@ -25,8 +20,8 @@
     favRow.append(favColImg, favColTxt)
     favDiv.append(favRow)
     $("#saved-favourites").append(favDiv)
-  
-  }
+    }
 }
+
 
 

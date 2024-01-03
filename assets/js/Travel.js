@@ -18,7 +18,7 @@ function getCountry(countryInput) {
     let options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': API7,
+            'X-RapidAPI-Key': API2,
             'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
         }
     };
@@ -59,8 +59,7 @@ function getCountry(countryInput) {
             })
             .then(function (data) {
                 activitiesArr = data.data.activities;
-                
-                                                                //hide initaily, and dipsly buttin when fetched!
+                activitiesBtn.show(); // when loaded activites button will be shown.
             })
             .catch(function (error) {
                 console.error(error);

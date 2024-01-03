@@ -23,7 +23,8 @@ This website runs in the browser and features dynamically updated HTML, CSS and 
 
 The use of various APIs are also utilised which are going to be listed in the Credits section.
 
-Click this link to access the Yūgen : 
+
+[Click this link to access the Yūgen](https://tejpatta.github.io/Travel-Inspiration/)
 
 ## Usage 
 
@@ -38,6 +39,11 @@ This website is user friendly to those who are intrested in finding new places t
 The cities searched are visible on the page in the form of a popup.
 
 Favourites are stored on a seperate page after clicking the loveheart icon to view at a later date.
+
+
+![Main Page](assets/images/main.png)        
+
+![My Favourites page](assets/images/fav.png)
 
 ## Features left to implement:
 

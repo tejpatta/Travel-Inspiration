@@ -69,6 +69,11 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
+/* changes the color on hover*/
+#search:hover{
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }
 
 /* style for buttons in modal */
 #previous{

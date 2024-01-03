@@ -1,8 +1,4 @@
   /* TODO
-  DONE 1. Nest on click event in Unsplash Js to be able to save to local storage both city name and url for image ( countyInput(key), imageUrl (value))
-  DONE 2. Edit MyList.HTML to have same <head>, <nav>, <script> as index html
-  DONE 3. add onload funtion in MyLit.html <body> to load the list of favourited cuuntires
-  5. Create draft card element with custom id and classes for responsive design
   4. Create a (onload) function to display favourited countires on MyList.html 
     this funtion shpuld create the card woth the pic and button
     -each card title shpuld be updated with 'key'- county name 
@@ -17,7 +13,25 @@
   function generateFavourites() { 
     // Retrieve the search history from local storage
     let savedFavourites = Object.entries(localStorage) // array of arrays 
-
+    // create card
+    for (i = 0; i < savedFavourites.length; i++) {
+    let favDiv = $("<div>").addClass("card mb-3")
+    let favRow = $("<div>").addClass("row g-0")
+    let favColImg = $("<div>").addClass("col-sm-4")
+    let favImage = $("<img>").addClass("img-fluid rounded-start").attr("src", savedFavourites[i][1])
+    let favColTxt = $("<div>").addClass("col-sm-8")
+    let favBody = $("<div>").addClass("card-body")
+    let favTitle = $("<h5>").addClass("card-title").text(savedFavourites[i][0])
+    let favBtn = $("<a>").addClass("btn btn-primary").addId("get-info")
+    favImage.append(favColImg)
+    favTitle.append(favBody)
+    favBtn.append(favBody)
+    favBody.append(favColTxt)
+    favColImg.append(favRow)
+    favColTxt.append(favRow)
+    favRow.append(favDiv)
+    favDiv.append($("#saved-favourites"))
+  }
 
   }
   /*

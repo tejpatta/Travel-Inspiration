@@ -107,7 +107,8 @@ footer{
   }
 
   #country-search{
-    width: 20vw;
+    min-width: 30vw;
+    max-width: 40vw;
   }
 
 

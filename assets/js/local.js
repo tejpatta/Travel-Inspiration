@@ -13,7 +13,14 @@
   function generateFavourites() { 
     // Retrieve the search history from local storage
     let savedFavourites = Object.entries(localStorage) // array of arrays 
-    // create card
+if (savedFavourites==[]){
+  
+  // Display search for countries
+} else {
+
+
+
+    // Card
     for (i = 0; i < savedFavourites.length; i++) {
     let favDiv = $("<div>").addClass("card mb-3")
     let favRow = $("<div>").addClass("row g-0")
@@ -32,8 +39,8 @@
     favRow.append(favDiv)
     favDiv.append($("#saved-favourites"))
   }
-
-  }
+ }
+}
   /*
     // Retrieve the country information from the current search
     const countryName = document.getElementById('countryName').textContent;

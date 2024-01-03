@@ -18,7 +18,7 @@ function getCountry(countryInput) {
     let options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': API4,
+            'X-RapidAPI-Key': API2,
             'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
         }
     };

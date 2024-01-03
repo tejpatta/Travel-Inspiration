@@ -1,46 +1,54 @@
-# Travel-Inspiration
+# Travel-Inspiration (Yūgen)
 
 ## Description 
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
+This project is structured in building a website application called Yūgen which will be showing off stunning locations, tourist sites and travel advice to inspire travellers. Users can read about fascinating sights, explore different areas, and make plans for their next adventure. This app runs in the browser and feature dynamically with updated HTML, CSS and Javascript powered by jQuery.
 
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
+Furthermore, this website is a front-end interactive webpage which reacts completely to user input. Enabling the users to access data for different countries and customise the website's appearance to suit their preferences.
 
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
+The end goal of user journey is to make it simple and intuitive, the group has created a single page architecture as follows:
 
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
-
-Lastly, if your project is deployed, include a link to the deployed application here.
-
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
-
-
-## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-
+* Bootstrap
+* Navigation Bar.
+* Inviting Cover Image with Call To Action Button.
+* Country Information Section.
+* Carousel
+* Cards and Footers
+* Unsplash
+* Jumbotron
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+This website runs in browser and feature dynamically with updated HTML, CSS and Javascript powered by jQuery and also complimented by Bootstrap which are all constructed using Visual Studio Code.  
+
+The use of various APIs are also utilised which are going to be listed in the Credits section.
+
+Click this link to access the Yūgen
 
 
 ## Usage 
 
-Provide instructions and examples for use. Include screenshots as needed. 
+This app is being developed with the following features:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+* Choosing Destination: There is a search bar that allows you to input any country of your choice to find out more information about after clicking the search button. The user is presented with four different information sources after choosing a country (Country Information, 3 Top Cities, Recent Tourism Articles and Pictures of the Cities). Futhermore, there is a place holder in the search button that will be a lucky draw. This allows users to search, without having to input a country, which will then generate random countries by clicking the search button.
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+
+* Finding Activities: This section permits the users to discover what the destination has to offer. After typing in the destination country, the search button popup the attractions after countries are being searched. Then you can find activities on the current cities within the search.
+
+This website is user friendly to those who are intrested in finding new places to visit or explore any cultural activities globally 
+
+The cities searched are visible on the page in the form of a popup.
+
+## Features left to implement:
+
+* Weather Forcast: This allows users to prepare for the weather condition at the particulare period of time they intend to visit
+* Lucky Draw: This will be an additional button next to the search button that will be a lucky draw. Allowing users to search, without having to input a country, which will then generate random countries by clicking the search button.
+* Community Hub: This section allows new users review the experience/activities of previous users, or even get more suggestions on what can be done within the country
+* Rating: Previous users can rate countries they have visited. This will help influence the decision of new users who are looking to visit those same countries
+
+## Testing
+
+Comprehensive User Acceptance Testing has been carried out and is stored in document section. 
 
 
 ## Credits
@@ -54,31 +62,9 @@ If you followed tutorials, include links to those here as well.
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+MIT License
 
 
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Languages used
+tech
+task

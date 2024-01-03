@@ -19,8 +19,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-center">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/images/Brand.png" alt="Icon" width="60" height="60" class="d-inline-block align-top">
-        <span class="ml-2" id="app-title">Yūgen</span></a>
+        <img src="assets/images/globe-logo.png" alt="Icon" width="120" height="80" class="d-inline-block align-top">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,17 +42,17 @@
 </div>
 <!-- Jumbotron -->
 <section id="jumbotron">
-  <div class="bg-light p-5 text-center" style="background-image: url('assets/images/kristine-tanne-EZT6qusWOBQ-unsplash.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 500px; border-radius: 0; max-width: 100%;">
+<div class="bg-light p-5 text-center" style="background-image: url('assets/images/kristine-tanne-EZT6qusWOBQ-unsplash.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 500px; border-radius: 0; max-width: 100%;">
+<div class="d-flex flex-column align align-items-center" id="jumbo-content">
     <h1 class="display-4"><strong>Go somewhere</strong></h1>
-    <form class="mt-3 text-center">
-      <input type="search" class="form-control mx-auto" id="country-search" placeholder="Search country or leave empty for lucky draw" style="width: 400px;">
+    <form class="">
+      <input type="search" class="form-control mx-auto text-center" id="country-search" placeholder="Search country or leave empty for lucky draw">
     </form>
-    <div class="d-flex flex-column align-items-center mt-3">
-    <button class="btn btn-lg" id="search" href="#" role="button">Search</button>
+    <button class="btn btn-lg text-center mt-3" id="search" href="#" role="button">Search</button>
     <div class="spinner-border text-secondary hide" id="loading" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
-  </div>
+</div>
   </div>
 </section>
 <!-- Results -->
@@ -61,7 +60,7 @@
 <div class="container">
 <div class="row">
   <div class="align-items-center col-md-6 mx-auto">
-    <h2 id="countryName" class="text-center placeholder-glow"><span class="placeholder col-12 placeholder-sm"></span></h2> <!-- empty we will target with JS to add city name -->
+    <h2 id="countryName" class="text-center placeholder-glow mt-3"><span class="placeholder col-12 placeholder-sm"></span></h2> <!-- empty we will target with JS to add city name -->
    <div class="text-center"><a class="btn btn-lg" id="myFavorites" href="#" role="button" onclick="addToFavorites()"><i class="fa-solid fa-heart-circle-plus"></i></a></div> 
     <p id="countryDescription" class="placeholder-glow"><span class="placeholder col-12 placeholder-lg"></span></p>
   <!-- Carousel -->
@@ -84,7 +83,7 @@
     </button>
   </div>
    <!-- Activities button-->
-   <div class="text-center"><button type="button" class="btn" id="activitiesBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+   <div class="text-center"><button type="button" class="btn mt-3" id="activitiesBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Find Activities
   </button> </div>
   </div>

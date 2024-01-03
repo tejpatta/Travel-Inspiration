@@ -1,19 +1,30 @@
+:root{
+--darkbg: rgb(22, 44, 58);
+--accentlight: rgb(219, 169, 136);
+--accentdark: rgb(217, 124, 80)
+}
+
+/*Styles for Index.html */
+
 body{
-    background-color:RGB(22, 44, 58);
+    background-color:var(--darkbg);
 }
 .hide{
     display: none !important;
 }
-#app-title{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: xx-large;
-}
+
+/* nav-bar styles */
 #my-list-link{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: large;
 }
+nav{
+    background-color: var(--accentlight);
+
+} 
+
+/* set sans-serif font for body elements and buttons */
 #country-search, #activityDescription, #countryDescription{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -22,47 +33,66 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+/* set text colour for content against the dark background */
+
 #countryName, #countryDescription{
-    color: RGB(219, 169, 136);
-}
-#search{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    color: var(--accentlight);
 }
 
+footer{
+    color: var(--accentlight);
+}
+/* set serif font for titles */
 #jumbotron .display-4, #countryName, #staticBackdropLabel{
 
     font-family: 'Yeseva One', serif;
 }
+
 #jumbotron{
     color: white;
 }
 
-nav{
-    background-color: rgb(219, 169, 136);
-
-}
+/* heart emoji colour and hover effect */
 .fa-solid{
- color: rgb(217, 124, 80);   
+ color: var(--accentdark);   
 }
+.fa-solid:hover{
+    color: rgb(246, 142, 44);
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }
+
+/* font and colour for  main buttons */
 #search, #activitiesBtn{
-    background-color: RGB(217, 124, 80);
+    background-color: var(--accentdark);
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
+/* changes the color on hover*/
+#search:hover{
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }
+
+/* style for buttons in modal */
 #previous{
     background-color: rgb(41, 107, 147);
     color: white; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 #next{
    background-color: rgb(22, 44, 58) ;
    color: white;
-}
-footer{
-    color: rgb(219, 169, 136);
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
+
+
 .modal-content{
-    background-color: rgb(219, 169, 136);
+    background-color: var(--accentlight);
 
 }
 #activityDescription{
@@ -72,8 +102,36 @@ footer{
 #myFavorites{
     align-items: center;
 }
-.fa-solid:hover{
-    color: rgb(246, 142, 44);
-    box-shadow: 0 0 5px rgb(246, 142, 44);
-    text-shadow: 0 0 5px rgb(246, 142, 44);
+
+  .navbar-brand img {
+    transform: scale(1.8); /* Adjust the scale factor as needed */
+    margin-left: 25%;
+    margin-top: -20%;
+    margin-bottom: -20%;
+    padding-right: 25%;
   }
+
+  #country-search{
+    min-width: 30vw;
+    max-width: 40vw;
+  }
+
+
+  
+  /* Styles for mylist */ 
+ .card-body{
+    background-color: var(--accentlight);
+    color: var(--darkbg);
+ }
+
+ .card-title{
+    font-family: 'Yeseva One', serif;
+ }
+
+ #view-saved{
+    background-color: rgb(41, 107, 147);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+ }
+

@@ -77,3 +77,15 @@ footer{
     box-shadow: 0 0 5px rgb(246, 142, 44);
     text-shadow: 0 0 5px rgb(246, 142, 44);
   }
+
+  .navbar-brand img {
+    transform: scale(1.8); /* Adjust the scale factor as needed */
+    margin-left: 25%;
+    margin-top: -20%;
+    margin-bottom: -20%;
+    padding-right: 25%;
+  }
+
+  #country-search{
+    width: 20vw;
+  }

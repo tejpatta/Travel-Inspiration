@@ -13,12 +13,10 @@
   function generateFavourites() { 
     // Retrieve the search history from local storage
     let savedFavourites = Object.entries(localStorage) // array of arrays 
-if (savedFavourites==[]){
-  
-  // Display search for countries
-} else {
-
-
+    console.log(savedFavourites)
+    //if (savedFavourites=={}){
+      //<h2>You have no favourites saved yet!</h2>
+    //} else {}
 
     // Card
     for (i = 0; i < savedFavourites.length; i++) {
@@ -29,17 +27,16 @@ if (savedFavourites==[]){
     let favColTxt = $("<div>").addClass("col-sm-8")
     let favBody = $("<div>").addClass("card-body")
     let favTitle = $("<h5>").addClass("card-title").text(savedFavourites[i][0])
-    let favBtn = $("<a>").addClass("btn btn-primary").addId("get-info")
-    favImage.append(favColImg)
-    favTitle.append(favBody)
-    favBtn.append(favBody)
-    favBody.append(favColTxt)
-    favColImg.append(favRow)
-    favColTxt.append(favRow)
-    favRow.append(favDiv)
-    favDiv.append($("#saved-favourites"))
+    let favBtn = $("<a>").addClass("btn btn-primary").attr('id','view-saved')
+    
+    favColImg.append(favImage)
+    favBody.append(favTitle, favBtn)
+    favColTxt.append(favBody)
+    favRow.append(favColImg, favColTxt)
+    favDiv.append(favRow)
+    $("#saved-favourites").append(favDiv)
+  
   }
- }
 }
   /*
     // Retrieve the country information from the current search

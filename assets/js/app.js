@@ -43,4 +43,3 @@ function random(min, max) {
 /*TODO:
 Add logic for search form favourits button
  */
-

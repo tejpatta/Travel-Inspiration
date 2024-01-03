@@ -119,7 +119,7 @@ footer{
 
   
   /* Styles for mylist */ 
- .card-body{
+ .card{
     background-color: var(--accentlight);
     color: var(--darkbg);
  }

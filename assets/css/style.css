@@ -33,10 +33,7 @@ body{
 #countryName, #countryDescription{
     color: var(--accentlight);
 }
-#search{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-}
+
 
 #jumbotron .display-4, #countryName, #staticBackdropLabel{
 
@@ -56,14 +53,21 @@ nav{
 #search, #activitiesBtn{
     background-color: var(--accentdark);
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
+
 #previous{
     background-color: rgb(41, 107, 147);
     color: white; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 #next{
    background-color: rgb(22, 44, 58) ;
    color: white;
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 footer{
     color: var(--accentlight);
@@ -99,3 +103,33 @@ footer{
   }
 
   /* Styles for mylist */
+ .card-body{
+    background-color: var(--accentlight);
+    color: var(--darkbg);
+ }
+
+ .card-title{
+    font-family: 'Yeseva One', serif;
+ }
+
+ #view-saved{
+    background-color: rgb(41, 107, 147);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+ }
+
+  <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-sm-4">
+      <img src="https://placehold.co/400x300" class="img-fluid rounded-start" alt="county image">
+    </div>
+    <div class="col-sm-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <a href="index.html" class="btn btn-primar ,vmnn cn
+        y">Get info</a>
+      </div>
+    </div>
+  </div>
+</div>

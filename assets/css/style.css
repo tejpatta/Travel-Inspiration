@@ -12,16 +12,19 @@ body{
 .hide{
     display: none !important;
 }
-#app-title{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: xx-large;
-}
+
+/* nav-bar styles */
 #my-list-link{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: large;
 }
+nav{
+    background-color: var(--accentlight);
+
+} 
+
+/* set sans-serif font for body elements and buttons */
 #country-search, #activityDescription, #countryDescription{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -30,26 +33,36 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+/* set text colour for content against the dark background */
+
 #countryName, #countryDescription{
     color: var(--accentlight);
 }
 
-
+footer{
+    color: var(--accentlight);
+}
+/* set serif font for titles */
 #jumbotron .display-4, #countryName, #staticBackdropLabel{
 
     font-family: 'Yeseva One', serif;
 }
+
 #jumbotron{
     color: white;
 }
 
-nav{
-    background-color: var(--accentlight);
-
-}
+/* heart emoji colour and hover effect */
 .fa-solid{
  color: var(--accentdark);   
 }
+.fa-solid:hover{
+    color: rgb(246, 142, 44);
+    box-shadow: 0 0 5px rgb(246, 142, 44);
+    text-shadow: 0 0 5px rgb(246, 142, 44);
+  }
+
+/* font and colour for  main buttons */
 #search, #activitiesBtn{
     background-color: var(--accentdark);
     color: white;
@@ -57,6 +70,7 @@ nav{
     font-weight: 300;
 }
 
+/* style for buttons in modal */
 #previous{
     background-color: rgb(41, 107, 147);
     color: white; 
@@ -69,9 +83,8 @@ nav{
    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
-footer{
-    color: var(--accentlight);
-}
+
+
 
 .modal-content{
     background-color: var(--accentlight);
@@ -84,11 +97,6 @@ footer{
 #myFavorites{
     align-items: center;
 }
-.fa-solid:hover{
-    color: rgb(246, 142, 44);
-    box-shadow: 0 0 5px rgb(246, 142, 44);
-    text-shadow: 0 0 5px rgb(246, 142, 44);
-  }
 
   .navbar-brand img {
     transform: scale(1.8); /* Adjust the scale factor as needed */
@@ -102,7 +110,9 @@ footer{
     width: 20vw;
   }
 
-  /* Styles for mylist */
+
+  
+  /* Styles for mylist */ 
  .card-body{
     background-color: var(--accentlight);
     color: var(--darkbg);
@@ -119,17 +129,3 @@ footer{
     font-weight: 300;
  }
 
-  <div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-sm-4">
-      <img src="https://placehold.co/400x300" class="img-fluid rounded-start" alt="county image">
-    </div>
-    <div class="col-sm-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <a href="index.html" class="btn btn-primar ,vmnn cn
-        y">Get info</a>
-      </div>
-    </div>
-  </div>
-</div>

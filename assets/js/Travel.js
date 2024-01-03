@@ -59,7 +59,7 @@ function getCountry(countryInput) {
             })
             .then(function (data) {
                 activitiesArr = data.data.activities;
-                activitiesBtn.show();
+                activitiesBtn.show(); // when loaded activites button will be shown.
             })
             .catch(function (error) {
                 console.error(error);

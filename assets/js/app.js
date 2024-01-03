@@ -22,7 +22,7 @@ function search(){
     $("#search").addClass("hide");
     $("#results-view").removeClass("hide")
     $(".placeholder").show();
-    //hidden buttons until featch is completed:
+    //hidden buttons until featch is completed
     myFav.hide();
     activitiesBtn.hide()
     // When the button is clicked then get the value from the input, remove whitespace, convert input to lowercase, and assign it to the variable countryInput
@@ -40,4 +40,7 @@ function random(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }
 
+/*TODO:
+Add logic for search form favourits button
+ */
 
